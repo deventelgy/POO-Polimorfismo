@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
     private String nombre;
     private String tipo_alimentacion;
     private int edad;
@@ -34,9 +34,8 @@ public class Animal {
     public void setEdad(int _edad){
         this.edad = _edad;
     }
-    public void alimentarse(){
+    public abstract void alimentarse();
         //cómo defino el método alimentarse para que se comporte de diferente manera según el objeto que le instancie?.
-    }
     public void moverse(){
         System.out.println("El animal se está moviendo");
     }
